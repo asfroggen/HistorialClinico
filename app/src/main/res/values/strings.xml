@@ -1,0 +1,231 @@
+<resources>
+    <string name="app_name">Historial Clínico</string>
+    <string name="nombre_programador">Alan Esau García Gutiérrez</string>
+    <string name="contacto_programador">Contacto!</string>
+    <string name="enviar_solicitud">Enviar solicitud de contacto</string>
+    <string name="app_desc">Diagnóstico y seguimiento médico</string>
+    <string name="ver_perfil">Ver perfil</string>
+    <string name="agregar">Agregar</string>
+    <string name="correo_programador">yosoypawn@hotmail.com</string>
+    <string name="desc_programador">Soy estudiante de la Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas,
+         cursando la carrera de Ingeniería Telemática y este es mi trabajo terminal. </string>
+    <string name="objetivo">El objetivo de Historial Clínico es brindar tanto a médicos como pacientes una
+        herramienta que facilite su contacto así como el pronto diagnóstico y prevención de enfermedades.</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="general">General</string>
+    <string name="contraseña">  Contraseña</string>
+    <string name="paciente">Paciente</string>
+    <string name="medico">Médico</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="logo_app">Logo Historial Clínico</string>
+    <string name="nombre_app">Historial Clínico</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="pregunta_usuario">¿Como que tipo de usuario desea iniciar?</string>
+    <string name="title_activity_paciente">Paciente</string>
+    <string name="title_activity_medico">Médico</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_cerrar_sesion">Cerrar sesión</string>
+    <string name="olvidaste">¿Olvidaste tu contraseña?</string>
+    <string name="leyenda_bottom_analisis">Recuerda: Los resultados dados por historial clínico deben ser validados por
+    un experto</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_analisis">Análisis</string>
+    <string name="menu_medicos">Médicos</string>
+    <string name="menu_clinicas">Clínicas</string>
+    <string name="menu_pacientes">Pacientes</string>
+    <string name="menu_consultas"> Consultas</string>
+    <string name="desliza_consultas">Desliza para ver tus consultas pendientes</string>
+    <string name="menu_configuracion">Configuración </string>
+    <string name="opciones">Opciones</string>
+    <string name="no_cuenta">¿No tienes una cuenta?</string>
+    <string name="registrate">Registrate aqui!</string>
+    <string name="datos_personales">Datos personales</string>
+    <string name="sexo">Sexo</string>
+    <string name="actualizar_datos">Datos personales</string>
+    <string name="actualizar_foto">Imagen de perfil</string>
+    <string name="bienvenido">Bienvenido!</string>
+    <string name="acerca_de">ACERCA DE</string>
+    <string name="cambiar_contra">Cambiar contraseña</string>
+    <string name="nuevo_correo">Nuevo correo electrónico</string>
+    <string name="conf_nuevo_correo">Confirmar nuevo correo electrónico</string>
+    <string name="fecha_nac">Fecha de nacimiento (Formato DD/MM/AAAA)</string>
+    <string name="actualizar_fecha_nac">Actualizar fecha de nacimiento</string>
+    <string name="ya_tevas">¿Ya te vas?</string>
+    <string name="una_vez">Una vez decidas eliminar tu cuenta todo registro será eliminado, todos tus análisis,
+        así como tus credenciales para iniciar sesión serán borrados de manera definitiva.</string>
+    <string name="dia">Día</string>
+    <string name="mes">Mes</string>
+    <string name="header_imagen">¿Buscas un nuevo look?</string>
+    <string name="seleccionar_imagen">Seleccionar nueva imagen de perfil</string>
+    <string name="listo">Listo!</string>
+    <string name="sube_una_foto">Carga una imagen o fotografía desde tu dispositivo,
+        una vez se muestra en pantalla, presiona el botón en la parte inferior derecha</string>
+    <string name="año">Año</string>
+    <string name="from">from</string>
+    <string name="act_especialidad">Actualizar especialidad</string>
+    <string name="act_ubicacion">Actualizar ubicación</string>
+    <string name="datos_prof">Datos profesionales</string>
+    <string name="cambie_datos_prof">Actualice su especialidad médica y su ubicación de trabajo actual</string>
+    <string name="educacion">Educación</string>
+    <string name="ipn">Instituto Politécnico Nacional</string>
+    <string name="olvidaste_contra">¿Olvidaste tu contraseña?</string>
+    <string name="ingrese_correo">Por favor, proporcionenos su correo electrónico y fecha de nacimiento
+    para poder recuperar su contraseña</string>
+    <string name="recuperar_contra">Recuperar contraseña</string>
+    <string name="reinciar_contra">Reiniciar contraseña</string>
+    <string name="ingrese_nueva">Por favor, ingrese su nueva contraseña</string>
+    <string name="cambiar_correo">Actualizar correo electrónico</string>
+    <string name="acerca_del_programador">Acerca del programador</string>
+    <string name="acerca_del_programador_dec">Consulta la información de contacto del programador</string>
+    <string name="eliminar_cuenta">Eliminar Cuenta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_registro_paciente">RegistroPaciente</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="bienvenido_a">Bienvenido/a!</string>
+    <string name="registrar_paciente">Registrarme como paciente</string>
+    <string name="registrar_medico">Registrarme como médico</string>
+    <string name="nombre_reg">Nombre</string>
+    <string name="seg_nombre">Segundo nombre</string>
+    <string name="apellido_p">Apellido paterno</string>
+    <string name="apellido_m">Apellido materno</string>
+    <string name="especialidad">Especialidad</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="contra">Constraseña</string>
+    <string name="conf_contra">Confirmar contraseña</string>
+    <string name="correo_elec">Correo electrónico</string>
+    <string name="seguro_usuario">¿Estas seguro que estas en el usuario correcto?</string>
+    <string name="subir_foto_analisis">Tomar fotografía</string>
+    <string name="datos_obtenidos">Datos obtenidos</string>
+    <string name="detectar_inf">Obtener datos</string>
+    <string name="preview_image">Text detected</string>
+
+    <string name="act_nombre">Actualizar nombre</string>
+    <string name="imagen_perfil">Imagen de perfil</string>
+    <string name="act_seg_nombre">Actualizar segundo nombre</string>
+    <string name="act_apellido_p">Actualizar apellido paterno</string>
+    <string name="act_apellido_m">Actualizar apellido materno</string>
+    <string name="act_sexo">Actualizar sexo</string>
+    <string name="seguridad">Seguridad</string>
+    <string name="seguridadMayus">SEGURIDAD</string>
+    <string name="cuenta">CUENTA</string>
+    <string name="credenciales">Credenciales</string>
+    <string name="baja_cuenta">Eliminar cuenta</string>
+    <string name="baja_cuenta_dec">Da de baja tu cuenta de manera permanente</string>
+    <string name="credenciales_dec">Actualiza las credenciales que usas para iniciar sesión</string>
+    <string name="datos_personales_dec">Cambia tus datos personales, como nombre(s), apellido(s) o edad</string>
+    <string name="imagen_perfil_dec">Toma una fotografía desde tu dispositivo o sube una imagen desde tu galeria para actualizar tu
+    imagen de perfil</string>
+    <string name="act_contra">Actualizar contraseña</string>
+    <string name="anterior_contra">Contraseña anterior</string>
+    <string name="nueva_contraseña">Nueva contraseña</string>
+    <string name="conf_nueva_contra">Confirmar nueva contraseña</string>
+
+    <string name="biometria">Biometría hemática</string>
+    <string name="quimica">Química sanguínea</string>
+    <string name="orina">Examen de orina</string>
+
+    <string name="mis_medicos">Mis médicos</string>
+    <string name="solicitudes">Solicitudes de contacto</string>
+    <string name="buscar_medicos">Buscar médicos</string>
+    <string name="nombre">Nombre</string>
+
+    <string name="creatinina">Creatinina</string>
+    <string name="albumina">Albumina</string>
+    <string name="acido">Ácido venilmandélico</string>
+    <string name="acido_abre">Ácido Vanilm.</string>
+
+    <string name="glucosa">Glucosa</string>
+    <string name="colesterol">Colesterol</string>
+    <string name="hierro">Hierro</string>
+    <string name="nombre_analisis">Nombre del análisis</string>
+    <string name="leucocitos">Leucocitos</string>
+    <string name="plaquetas">Plaquetas</string>
+    <string name="eritrocitos">Eritrocitos</string>
+    <string name="guardar_analisis">Guardar análisis</string>
+
+    <string name="nuevo_orina">Nuevo análisis de orina</string>
+    <string name="nuevo_quimica">Nueva quimica sanguínea</string>
+    <string name="nuevo_biometria">Nueva biometría hemática</string>
+
+    <string name="unidades_creatinina_orina">mg/Kg</string>
+    <string name="unidades_albumina_orina">mg/24h</string>
+    <string name="unidades_acido_orina">mg/24h</string>
+
+    <string name="unidades_glucosa_quimica">mg/dL</string>
+    <string name="unidades_creatinina_quimica">mg/dL</string>
+    <string name="unidades_colesterol_quimica">mg/dL</string>
+    <string name="unidadaes_hierro_quimica">μg/dL</string>
+
+    <string name="unidades_leucocitos_biometria">10^3 μl</string>
+    <string name="unidades_eritrocitos_biometria">10^3 μl</string>
+    <string name="unidades_plaquetas_biometria">10^3</string>
+
+    <string name="fecha">Fecha (Formato DD/MM/AAAA)</string>
+    <string name="editar_analisis">Editar análisis</string>
+    <string name="act_fecha">Actualizar fecha</string>
+    <string name="act_datos">Actualizar datos</string>
+    <string name="anterior">Anterior</string>
+    <string name="parametro">Parámetro</string>
+    <string name="valor_anterior">Valor anterior</string>
+    <string name="valor">Valor</string>
+    <string name="unidades">Unidades</string>
+    <string name="buscas_clinicas">¿Buscando laboratorios?</string>
+    <string name="buscas_clinicas_desc">Esta función permite buscar laboratorios y clínicas cercanas
+        a tu ubicación</string>
+    <string name="buscar_clinicas">Buscar clínicas</string>
+    <string name="buscar">Buscar</string>
+    <string name="inicio">Inicio</string>
+    <string name="quimicas">Quimicas San.</string>
+    <string name="biometrias">Biometrias Hem.</string>
+    <string name="orinas">E. Orina</string>
+
+    <string name="nombre_paciente">Paciente</string>
+    <string name="crear_consulta">Crear consulta</string>
+    <string name="nombre_consulta">Nombre de la consulta</string>
+    <string name="altura">Altura</string>
+    <string name="altura_number">1.60</string>
+    <string name="peso">Peso</string>
+    <string name="peso_number">50.0</string>
+    <string name="imc">Índice de masa corporal</string>
+    <string name="imc_number">0</string>
+    <string name="nivel_peso">Nivel de peso</string>
+    <string name="nivel_peso_number">--</string>
+    <string name="meters">m</string>
+    <string name="kilog">Kg</string>
+    <string name="calcular_imc">Calcular IMC</string>
+
+    <string name="que_haremos">¿Tienes algo pendiente?</string>
+    <string name="ver_analisis">Ver analisis</string>
+    <string name="niveles_leucocitos">Niveles leucocitos</string>
+    <string name="niveles_eritrocitos">Niveles eritrocitos</string>
+    <string name="niveles_plaquetas">Niveles plaquetas</string>
+    <string name="interpretacion">Posible diagnóstico:</string>
+    <string name="interpretacion_desc">Interpretacion desc.</string>
+    <string name="porcentaje">60%</string>
+
+    <string name="niveles_creatinina">Niveles creatinina</string>
+    <string name="niveles_albumina">Niveles albúmina</string>
+    <string name="niveles_acido">Niveles ácido venilmandélico</string>
+
+    <string name="niveles_glucosa">Niveles glucosa</string>
+    <string name="niveles_hierro">Niveles hierro</string>
+    <string name="niveles_colesterol">Niveles colesterol</string>
+    <string name="title_activity_agregar_biometria_foto">AgregarBiometriaFoto</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

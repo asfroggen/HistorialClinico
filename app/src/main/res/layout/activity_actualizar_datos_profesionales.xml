@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuMedico.Configuracion.ActualizarDatosProfesionales"
+    android:background="@color/colorFondoLogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:background="@drawable/button_ripple_gray"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/back_icon_cyan"
+                android:contentDescription="@string/datos_prof" />
+            <LinearLayout
+                android:id="@+id/llCambiarCorreo"
+                android:layout_width="match_parent"
+                android:elevation="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/linear_rounded_gray"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView211"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datos_prof"
+                    android:textColor="@color/colorCyanFuerte"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_marginTop="5dp"
+                    android:paddingHorizontal="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:paddingHorizontal="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="@string/especialidad"
+                        android:fontFamily="@font/sfpro"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <EditText
+                        android:id="@+id/etEspecialidad"
+                        android:drawableStart="@drawable/custom_espe_icon_medico"
+                        android:drawablePadding="16dp"
+                        android:background="@drawable/custom_edit_text"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfpro"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:autofillHints=""
+                        tools:ignore="LabelFor"
+                        android:layout_marginTop="5dp"/>
+                    <Button
+                        android:id="@+id/bActualizarEspecialidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_especialidad"
+                        android:fontFamily="@font/sfpro"
+                        android:background="@drawable/button_rounded_gradient_cyan"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ubicacion"
+                        android:fontFamily="@font/sfpro"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <EditText
+                        android:id="@+id/etUbicacion"
+                        android:background="@drawable/custom_edit_text"
+                        android:drawableStart="@drawable/custom_ubi_icon_medico"
+                        android:drawablePadding="16dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfpro"
+                        android:ems="10"
+                        android:inputType="textPostalAddress"
+                        android:layout_marginTop="5dp"
+                        android:autofillHints=""
+                        tools:ignore="LabelFor" />
+
+
+                    <Button
+                        android:id="@+id/bActualizarUbicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_ubicacion"
+                        android:fontFamily="@font/sfpro"
+                        android:background="@drawable/button_rounded_gradient_cyan"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

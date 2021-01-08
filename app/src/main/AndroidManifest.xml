@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.historialclinico">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Usuario"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MenuPaciente.Analisis.Agregar.AgregarQuimicaFoto"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MenuPaciente.Analisis.Agregar.AgregarOrinaFoto"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MenuPaciente.Analisis.Agregar.AgregarBiometriaFoto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name=".MenuPaciente.Analisis.Ver.VerQuimica"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Analisis.Ver.VerOrina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Analisis.Ver.VerBiometria"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMedico.Pacientes.PacienteDetalle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Clinicas.BuscarClinicas"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MenuPaciente.Analisis.Editar.EditarOrina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Analisis.Editar.EditarBiometria"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Analisis.Editar.EditarQuimica"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Analisis.Agregar.AgregarQuimica"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Analisis.Agregar.AgregarBiometria"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Analisis.Agregar.AgregarOrina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuPaciente.Medicos.MedicoDetalle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registro.ReiniciarContraMedico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registro.ReiniciarContra"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMedico.Configuracion.EliminarCuentaMedico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMedico.Configuracion.AcercaDeMedico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMedico.Configuracion.ActualizarImagenMedico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMedico.Configuracion.ActualizarCredencialesMedico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMedico.Configuracion.ActualizarDatosProfesionales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMedico.Configuracion.ActualizarDatosPersonalesMedico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Configuracion.EliminarCuenta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Configuracion.ActualizarImagen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registro.ContraOlvidada"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Configuracion.AcercaDe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Configuracion.ActualizarCredenciales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuPaciente.Configuracion.ActualizarDatosPersonales"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registro.RegistroMedico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Registro.RegistroPaciente"
+            android:label="@string/title_activity_registro_paciente"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MedicoActivity"
+            android:label="@string/title_activity_medico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PacienteActivity"
+            android:label="@string/title_activity_paciente"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".FCMNotification"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

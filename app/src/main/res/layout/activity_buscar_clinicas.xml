@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPaciente.Clinicas.BuscarClinicas"
+    android:orientation="vertical">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_alignBottom="@id/google_map"
+        android:layout_marginBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/spBuscar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/search_rounded"/>
+        
+        <Button
+            android:id="@+id/bBuscarClinicas"
+            android:background="@drawable/button_rounded_gradient_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/buscar"
+            android:textColor="@color/colorFondoLogin"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivBack"
+        android:background="@drawable/button_ripple_gray_transparent"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:src="@mipmap/back_icon_orange"
+        android:contentDescription="@string/datos_personales" />
+</RelativeLayout>

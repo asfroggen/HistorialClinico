@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPaciente.Configuracion.ActualizarCredenciales"
+    android:background="@color/colorFondoLogin"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:background="@drawable/button_ripple_gray"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/back_icon_orange"
+            android:contentDescription="@string/cambiar_correo" />
+        <LinearLayout
+            android:id="@+id/llCambiarCorreo"
+            android:layout_width="match_parent"
+            android:elevation="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_rounded_gray"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tvActualizarCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cambiar_correo"
+                android:textColor="@color/colorOrangeFuerte"
+                android:textStyle="bold"
+                android:fontFamily="@font/sfpro"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/nuevo_correo"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/etNuevoCorreo"
+                    android:background="@drawable/custom_edit_text"
+                    android:drawableStart="@drawable/custom_email_icon_paciente"
+                    android:drawablePadding="16dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conf_nuevo_correo"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/etConfCorreo"
+                    android:background="@drawable/custom_edit_text"
+                    android:drawableStart="@drawable/custom_email_icon_paciente"
+                    android:drawablePadding="16dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contraseña"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorOrangeFuerte"
+                    android:layout_marginTop="5dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etContraCorreo"
+                        android:background="@drawable/custom_edit_text"
+                        android:drawableStart="@drawable/custom_lock_icon_paciente"
+                        android:padding="10dp"
+                        android:drawablePadding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfpro"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/bActualizarCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cambiar_correo"
+                    android:fontFamily="@font/sfpro"
+                    android:background="@drawable/button_rounded_gradient_orange"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llCambiarContra"
+            android:elevation="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/linear_rounded_gray"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                    android:id="@+id/tvActualizarContra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cambiar_contra"
+                    android:textColor="@color/colorOrangeFuerte"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_marginTop="5dp"
+                    android:paddingHorizontal="10dp"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/anterior_contra"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorOrangeFuerte"
+                    android:layout_marginTop="5dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etContraAnterior"
+                        android:background="@drawable/custom_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/custom_lock_icon_paciente"
+                        android:padding="10dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/sfpro"
+                        android:autofillHints=""
+                        tools:ignore="LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_contraseña"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorOrangeFuerte"
+                    android:layout_marginTop="5dp">
+                    <EditText
+                        android:id="@+id/etNuevaContra"
+                        android:background="@drawable/custom_edit_text"
+                        android:drawableStart="@drawable/custom_lock_icon_paciente"
+                        android:padding="10dp"
+                        android:drawablePadding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfpro"
+                        android:ems="10"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conf_contra"
+                    android:fontFamily="@font/sfpro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorOrangeFuerte"
+                    android:layout_marginTop="5dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etConfNuevaContra"
+                        android:background="@drawable/custom_edit_text"
+                        android:drawableStart="@drawable/custom_lock_icon_paciente"
+                        android:padding="10dp"
+                        android:drawablePadding="8dp"
+                        android:paddingVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfpro"
+                        android:ems="10"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/bActualizarContra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/act_contra"
+                    android:fontFamily="@font/sfpro"
+                    android:background="@drawable/button_rounded_gradient_orange"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home_icon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_analisis"
+            android:icon="@mipmap/analisis"
+            android:title="@string/menu_analisis" />
+        <item
+            android:id="@+id/nav_medicos"
+            android:icon="@mipmap/medico_icon"
+            android:title="@string/menu_medicos" />
+        <item
+            android:id="@+id/nav_clinicas"
+            android:icon="@mipmap/hospital_icon"
+            android:title="@string/menu_clinicas"/>
+    </group>
+    <item android:title="@string/opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_confi"
+                android:icon="@mipmap/configuracion"
+                android:title="@string/menu_configuracion" />
+        </menu>
+    </item>
+</menu>

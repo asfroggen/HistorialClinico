@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondoLogin">
+
+    <LinearLayout
+        android:background="@drawable/button_ripple_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImagenMedico"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@mipmap/user_icon_dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+        <LinearLayout
+            android:background="@drawable/button_ripple_gray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNombreMedico"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/sfpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_reg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#535353"/>
+
+            <TextView
+                android:id="@+id/tvEspecialidadMedico"
+                android:fontFamily="@font/sfpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/especialidad"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#686A6A"/>
+            <TextView
+                android:id="@+id/tvUbicacionMedico"
+                android:fontFamily="@font/sfpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ubicacion"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#899092"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="2000sp"
+        android:layout_height="1dp"
+        android:background="@drawable/gradient_gray"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

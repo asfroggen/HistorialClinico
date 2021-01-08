@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MenuPaciente.Home.HomeFragment"
+    android:background="@color/colorFondoLogin"
+    android:orientation="vertical"
+    android:paddingVertical="16dp">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svBuscarMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:iconifiedByDefault="false"
+        app:queryHint="Buscar por nombre"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/rlBuscarMedicos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondoLogin"
+        android:layout_marginTop="8dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/calendarView"
+                android:layout_width="263dp"
+                android:layout_height="244dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:src="@mipmap/home_icon_paciente"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="29dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/que_haremos"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/desliza_consultas"
+                android:textColor="#000000"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerIdBuscarMedicos"
+                    android:background="@color/colorFondoLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

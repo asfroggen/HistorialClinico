@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "454704191330",
+    "firebase_url": "https://historialclinico-d2211.firebaseio.com",
+    "project_id": "historialclinico-d2211",
+    "storage_bucket": "historialclinico-d2211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454704191330:android:ca90701d21a1a9f6de7e3b",
+        "android_client_info": {
+          "package_name": "com.example.historialclinico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454704191330-f2676la116d7pkbh21agc620046gmils.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.historialclinico",
+            "certificate_hash": "c63ae39d59a78b93ac67880447b38264ddfaa29d"
+          }
+        },
+        {
+          "client_id": "454704191330-vsd64j6n4cuthi1hgs9q9sohilu3q9ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4W-7v5k-OV0sfrFRLhTrHY86S3f6huGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454704191330-vsd64j6n4cuthi1hgs9q9sohilu3q9ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

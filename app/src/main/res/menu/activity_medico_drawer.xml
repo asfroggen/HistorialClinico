@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home_icon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_pacientes"
+            android:icon="@mipmap/pacientes_icon"
+            android:title="@string/menu_pacientes" />
+        <item
+            android:id="@+id/nav_consultas"
+            android:icon="@mipmap/consultas_icon"
+            android:title="@string/menu_consultas" />
+    </group>
+    <item android:title="@string/opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_confi"
+                android:icon="@mipmap/configuracion"
+                android:title="@string/menu_configuracion" />
+        </menu>
+    </item>
+</menu>

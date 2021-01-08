@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro.ContraOlvidada"
+    android:background="@color/colorFondoLogin"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="15dp">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:background="@drawable/button_ripple_gray"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/back_icon_orange"
+            android:contentDescription="@string/olvidaste_contra" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@mipmap/unlock_icon"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/olvidaste_contra" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpro"
+            android:layout_marginTop="10dp"
+            android:text="@string/olvidaste_contra"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpro"
+            android:layout_marginTop="10dp"
+            android:text="@string/ingrese_correo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/colorOrangeFuerte">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCorreo"
+                android:background="@drawable/custom_edit_text"
+                android:hint="@string/correo_electronico"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/sfpro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/custom_email_icon_paciente"
+                android:drawablePadding="10dp"
+                android:padding="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sfpro"
+            android:gravity="center"
+            android:text="@string/fecha_nac"
+            android:textColor="@color/colorOrangeFuerte"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tlConPassword" />
+        <LinearLayout
+            android:id="@+id/tlEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tvFecha">
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro"
+                android:text="@string/dia"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/etDiaNac"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:autofillHints=""
+                android:fontFamily="@font/sfpro"
+                android:maxLength="2"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:paddingVertical="8dp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro"
+                android:text="@string/mes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/etMesNac"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:autofillHints=""
+                android:maxLength="2"
+                android:fontFamily="@font/sfpro"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:paddingVertical="8dp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/textView136"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro"
+                android:text="@string/año"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/etAnoNac"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:autofillHints=""
+                android:maxLength="4"
+                android:fontFamily="@font/sfpro"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:paddingVertical="8dp"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_rounded_orange"
+            android:fontFamily="@font/sfpro"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="@string/recuperar_contra"
+            android:textColor="@color/colorFondoClaro"/>
+    </LinearLayout>
+
+</ScrollView>

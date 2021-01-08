@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.historialclinico.MenuPaciente.Home.HomeFragment"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_analisis"
+        android:name="com.example.historialclinico.MenuPaciente.Analisis.AnalisisFragment"
+        android:label="@string/menu_analisis"
+        tools:layout="@layout/fragment_analisis" />
+
+    <fragment
+        android:id="@+id/nav_medicos"
+        android:name="com.example.historialclinico.MenuPaciente.Medicos.MedicosFragment"
+        android:label="@string/menu_medicos"
+        tools:layout="@layout/fragment_medicos" />
+    <fragment
+        android:id="@+id/nav_clinicas"
+        android:name="com.example.historialclinico.MenuPaciente.Clinicas.ClinicasFragment"
+        android:label="@string/menu_clinicas"
+        tools:layout="@layout/fragment_clinicas" />
+    <fragment
+        android:id="@+id/nav_confi"
+        android:name="com.example.historialclinico.MenuPaciente.Configuracion.ConfiguracionFragment"
+        android:label="@string/menu_configuracion"
+        tools:layout="@layout/fragment_configuracion" />
+</navigation>

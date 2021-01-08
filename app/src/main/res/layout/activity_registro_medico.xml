@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondoLogin"
+    tools:context=".Registro.RegistroMedico"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:background="@drawable/button_ripple_gray"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:src="@mipmap/back_icon_cyan"
+                android:contentDescription="@string/registrar_medico" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro"
+                android:gravity="center"
+                android:text="@string/bienvenido_a"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/colorCyanFuerte">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/nombre_reg"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlSegNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/colorCyanFuerte"
+                app:layout_constraintTop_toBottomOf="@id/tlNombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSegNombre"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/seg_nombre"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlApellidoM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/colorCyanFuerte">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etApellidoP"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/apellido_p"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlApellidoP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/colorCyanFuerte">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etApellidoM"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/apellido_m"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="294dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorCyanFuerte"
+                    android:checked="true"
+                    android:fontFamily="@font/sfpro"
+                    android:text="@string/masculino" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rbFemenino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorCyanFuerte"
+                    android:checked="false"
+                    android:fontFamily="@font/sfpro"
+                    android:text="@string/femenino" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlEspecialidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/colorCyanFuerte">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEspecialidad"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/especialidad"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/colorCyanFuerte">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUbicacion"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/ubicacion"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/colorCyanFuerte">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorreo"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/correo_electronico"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlPasswordR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:hintTextColor="@color/colorCyanFuerte"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorCyanFuerte">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/contraseña"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlConPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:hintTextColor="@color/colorCyanFuerte"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorCyanFuerte"
+                tools:layout_editor_absoluteY="225dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConfPassword"
+                    android:layout_width="297dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:fontFamily="@font/sfpro"
+                    android:hint="@string/conf_contra"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="25dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sfpro"
+                android:gravity="center"
+                android:text="@string/fecha_nac"
+                android:textColor="@color/colorCyanFuerte"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tlConPassword" />
+            <LinearLayout
+                android:id="@+id/tlEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tvFecha">
+
+                <TextView
+                    android:id="@+id/textView134"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro"
+                    android:text="@string/dia"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/etDiaNac"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:autofillHints=""
+                    android:maxLength="2"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingVertical="8dp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/textView135"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro"
+                    android:text="@string/mes"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/etMesNac"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:autofillHints=""
+                    android:maxLength="2"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingVertical="8dp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/textView136"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro"
+                    android:text="@string/año"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <EditText
+                    android:id="@+id/etAnoNac"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:autofillHints=""
+                    android:maxLength="4"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingVertical="8dp"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/sfpro"
+                android:text="@string/seguro_usuario"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/bRegistrarMedico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_rounded_cyan"
+                android:fontFamily="@font/sfpro"
+                android:paddingHorizontal="20dp"
+                android:text="@string/registrar_medico"
+                android:textColor="@color/colorFondoClaro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/sfpro"
+                android:text="@string/nombre_app"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bRegistrarse"
+                app:layout_constraintVertical_bias="0.109" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

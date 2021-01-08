@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondoLogin">
+
+    <LinearLayout
+        android:background="@drawable/button_ripple_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImagenAnalisis"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@mipmap/biometria_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:background="@drawable/button_ripple_gray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/tvNombreAnalisis"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sfpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_reg"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#535353"/>
+
+            <TextView
+                android:id="@+id/tvFechaAnalisis"
+                android:fontFamily="@font/sfpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/especialidad"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#686A6A"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/bEditarAnalisis"
+            android:background="@drawable/button_ripple_gray"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/edit_icon"
+            android:contentDescription="@string/eliminar_cuenta" />
+        <ImageView
+            android:id="@+id/bEliminarAnalisis"
+            android:background="@drawable/button_ripple_gray"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/delete_icon_red"
+            android:contentDescription="@string/eliminar_cuenta" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="2000sp"
+        android:layout_height="1dp"
+        android:background="@drawable/gradient_gray"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

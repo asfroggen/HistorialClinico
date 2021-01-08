@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_quimica"
+        android:icon="@mipmap/quimica_bottom_icon"
+        android:title="@string/quimicas"/>
+    <item
+        android:id="@+id/nav_biometria"
+        android:icon="@mipmap/biometria_bottom_icon"
+        android:title="@string/biometrias"/>
+    <item
+    android:id="@+id/nav_orinas"
+    android:icon="@mipmap/orina_bottom_icon"
+    android:title="@string/orinas"/>
+</menu>
